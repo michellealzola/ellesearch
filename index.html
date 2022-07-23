@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elle's Search</title>
+    <meta name="author" content="Michelle Alzola">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/ellesearchstyles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/LOGO_JSON-05.png" alt="Elle's Search Logo" width="200">
+            <h1>Elle's Search</h1>
+        </header>
+        <main>
+            <div>
+                <label>Search Client by ID</label>
+                <input type="text" id="search_id">
+                <button onclick="searchId();">Search</button>
+            </div>
+            <table id="id_results"></table>
+
+            <div>
+                <label>Search Client by Last Name</label>
+                <input type="text" id="search_lastName">
+                <button onclick="searchLastName();">Search</button>
+            </div>
+            <table id="lastName_results"></table>
+
+            <div>
+                <label>Search Client by Phone</label>
+                <input type="text" id="search_phone">
+                <button onclick="searchPhone();">Search</button>
+            </div>
+            <table id="phone_results"></table>
+
+        </main>
+        <script src="./scripts/ellesearchscripts.js"></script>
+    </div>
+
+</body>
+
+</html>
